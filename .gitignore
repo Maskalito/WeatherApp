@@ -3,3 +3,9 @@
 
 # misc
 .env
+
+# Build
+build/
+
+# MacOS
+.DS_Store

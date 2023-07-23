@@ -25,22 +25,16 @@ cd WeatherApp
 3. Install the dependencies using npm or yarn
 
 ```bash
-npm install react react-dom axios typescript
-```
-or
-```bash
-yarn install react react-dom axios typescript
+npm install
+# or
+yarn install
 ```
 
 ## API key
 
 1. Go on the site https://www.weatherapi.com/. Sign up (for free) and on your page copy your api key.
-  
-2. Create a .env file in the root directory of the project and add your api key as follow
 
-```bash
-REACT_APP_API_KEY="YOUR_API_KEY"
-```
+2. Create a .env file that use .env.example architecture
 
 ## Run the app
 

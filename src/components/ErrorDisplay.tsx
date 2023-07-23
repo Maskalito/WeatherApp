@@ -1,10 +1,8 @@
-import React from "react";
-
 interface ErrorDisplayProps {
     errorMessage: string;
 }
 
-const ErrorDisplay: React.FC<ErrorDisplayProps> = ({ errorMessage }) => {
+const ErrorDisplay = ({ errorMessage }: ErrorDisplayProps) => {
     return (
         <div className="invalid_location">
             {errorMessage}

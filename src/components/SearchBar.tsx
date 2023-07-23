@@ -4,7 +4,7 @@ interface SearchBarProps {
   onSearch: (location: string) => void;
 }
 
-const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
+const SearchBar = ({ onSearch }: SearchBarProps) => {
   const [location, setLocation] = useState("");
 
   const handleSearch = (event: React.KeyboardEvent<HTMLInputElement>) => {
@@ -15,7 +15,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   };
 
   return (
-    <div className="search">
+    <div className="search" style={{}}>
       <input
         value={location}
         onChange={(event) => setLocation(event.target.value)}
