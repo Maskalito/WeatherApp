@@ -29,7 +29,11 @@ function App() {
   return (
     <div className="app">
       <SearchBar onSearch={handleSearchLocation} />
-      {data ? <WeatherDisplay data={data} /> : <ErrorDisplay errorMessage={errorMessage} />}
+      {data ? (
+        <WeatherDisplay data={data} />
+      ) : (
+        <ErrorDisplay errorMessage={errorMessage} />
+      )}
     </div>
   );
 }
